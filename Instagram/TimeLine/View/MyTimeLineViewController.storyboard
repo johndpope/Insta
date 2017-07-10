@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Js-b8-4Fc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Time Line View Controller-->
+        <scene sceneID="D2e-co-VQp">
+            <objects>
+                <viewController id="orj-ue-Sg3" customClass="MyTimeLineViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Jr-BP-p7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="74e-iG-AOl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AgE-oX-b7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="23" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FYx-jg-0Yg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Bid-S7-kdg" customClass="StoryView" customModule="Instagram" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.40460175279999999" green="0.73269313570000005" blue="0.99051672219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fZy-wZ-flb" customClass="TimeLineTableViewCell" customModule="Instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZy-wZ-flb" id="yry-yL-KlN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FYx-jg-0Yg" secondAttribute="trailing" id="XMm-g7-g3s"/>
+                            <constraint firstItem="74e-iG-AOl" firstAttribute="top" secondItem="FYx-jg-0Yg" secondAttribute="bottom" id="edm-VE-DlV"/>
+                            <constraint firstItem="FYx-jg-0Yg" firstAttribute="leading" secondItem="AgE-oX-b7Z" secondAttribute="leading" id="mUD-Cj-Vvf"/>
+                            <constraint firstItem="FYx-jg-0Yg" firstAttribute="top" secondItem="3Jr-BP-p7W" secondAttribute="bottom" id="u0B-uU-4xO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zcy-da-aAl">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="9PI-DS-5bi">
+                            <rect key="frame" x="139.5" y="5.5" width="96" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram" translatesAutoresizingMaskIntoConstraints="NO" id="igf-Mw-jMy">
+                                    <rect key="frame" x="0.0" y="0.0" width="112" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="igf-Mw-jMy" secondAttribute="height" multiplier="34:10" id="asV-2d-n9D"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="igf-Mw-jMy" firstAttribute="leading" secondItem="9PI-DS-5bi" secondAttribute="leading" id="XQW-Bb-hAX"/>
+                                <constraint firstAttribute="bottom" secondItem="igf-Mw-jMy" secondAttribute="bottom" id="crn-DV-Zt3"/>
+                                <constraint firstItem="igf-Mw-jMy" firstAttribute="top" secondItem="9PI-DS-5bi" secondAttribute="top" id="gXo-zK-VQb"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="instagramLogo" destination="igf-Mw-jMy" id="ai3-s3-ctM"/>
+                        <outlet property="storyView" destination="Bid-S7-kdg" id="6sw-yA-WmM"/>
+                        <outlet property="tableView" destination="FYx-jg-0Yg" id="QPR-rU-izE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORy-su-ZSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="97"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fXd-ov-4IN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Js-b8-4Fc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ec-l6-TE3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="orj-ue-Sg3" kind="relationship" relationship="rootViewController" id="TGe-qF-Dt4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUg-rW-xpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.80000000000001" y="180.35982008995504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Instagram" width="352" height="103"/>
+    </resources>
+</document>

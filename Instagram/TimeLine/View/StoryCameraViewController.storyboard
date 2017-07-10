@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VM5-nL-eVc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Story Camera View Controller-->
+        <scene sceneID="NmO-QK-gXx">
+            <objects>
+                <viewController storyboardIdentifier="StoryCameraVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VM5-nL-eVc" customClass="StoryCameraViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WUN-jB-IF8"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgk-VW-c3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BwD-Yn-IUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thunder" translatesAutoresizingMaskIntoConstraints="NO" id="ky6-fd-c4G">
+                                <rect key="frame" x="82.5" y="578.5" width="22.5" height="22.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ky6-fd-c4G" secondAttribute="height" multiplier="1:1" id="QSj-ut-srx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inverse" translatesAutoresizingMaskIntoConstraints="NO" id="lLU-pM-JTH">
+                                <rect key="frame" x="270.5" y="578.5" width="22.5" height="22.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lLU-pM-JTH" secondAttribute="height" multiplier="1:1" id="auf-jO-0Q6"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNC-jf-fDr" userLabel="surroudingView">
+                                <rect key="frame" x="150" y="552" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cNC-jf-fDr" secondAttribute="height" multiplier="1:1" id="Mtn-ls-tbf"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraSelection" translatesAutoresizingMaskIntoConstraints="NO" id="feM-06-whE">
+                                <rect key="frame" x="175" y="654.5" width="25" height="12.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="feM-06-whE" secondAttribute="height" multiplier="2:1" id="i3A-F0-jYm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOT-gs-wQP">
+                                <rect key="frame" x="174" y="642" width="27" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ライブ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqb-e3-3D4">
+                                <rect key="frame" x="104" y="642" width="40" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J65-Lh-hxp">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlN-VB-9JY" userLabel="coreView">
+                                <rect key="frame" x="163.5" y="565" width="49" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagramでライブ配信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3L9-0Q-Bbb">
+                                <rect key="frame" x="58.5" y="319.5" width="258.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlB-Vp-DBa">
+                                <rect key="frame" x="37.5" y="358.5" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cNC-jf-fDr" firstAttribute="centerY" secondItem="ky6-fd-c4G" secondAttribute="centerY" id="36b-cS-4nr"/>
+                            <constraint firstItem="cNC-jf-fDr" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="5z5-oN-OVL"/>
+                            <constraint firstItem="lLU-pM-JTH" firstAttribute="leading" secondItem="VlN-VB-9JY" secondAttribute="trailing" constant="58" id="77e-B6-58K"/>
+                            <constraint firstAttribute="trailing" secondItem="J65-Lh-hxp" secondAttribute="trailing" id="BKm-dY-TeI"/>
+                            <constraint firstItem="qlB-Vp-DBa" firstAttribute="width" secondItem="BwD-Yn-IUR" secondAttribute="width" multiplier="0.8" id="Bm5-nW-juv"/>
+                            <constraint firstItem="lLU-pM-JTH" firstAttribute="width" secondItem="cNC-jf-fDr" secondAttribute="width" multiplier="0.3" id="Brn-Wr-D8b"/>
+                            <constraint firstItem="feM-06-whE" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="F9S-wk-EfI"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="height" secondItem="cNC-jf-fDr" secondAttribute="height" multiplier="0.65" id="GcG-cf-lFB"/>
+                            <constraint firstItem="ky6-fd-c4G" firstAttribute="width" secondItem="cNC-jf-fDr" secondAttribute="width" multiplier="0.3" id="HFW-B6-aLj"/>
+                            <constraint firstItem="oqb-e3-3D4" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="I96-Wd-3UJ"/>
+                            <constraint firstItem="qlB-Vp-DBa" firstAttribute="top" secondItem="3L9-0Q-Bbb" secondAttribute="bottom" constant="10" id="IBy-zS-7j9"/>
+                            <constraint firstItem="wgk-VW-c3j" firstAttribute="top" secondItem="feM-06-whE" secondAttribute="bottom" id="KjU-ls-Qgy"/>
+                            <constraint firstItem="3L9-0Q-Bbb" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="P3h-G8-vMV"/>
+                            <constraint firstItem="sOT-gs-wQP" firstAttribute="centerY" secondItem="oqb-e3-3D4" secondAttribute="centerY" id="Q4b-5r-qLt"/>
+                            <constraint firstItem="J65-Lh-hxp" firstAttribute="top" secondItem="cNC-jf-fDr" secondAttribute="bottom" id="Ryv-sd-6pS"/>
+                            <constraint firstItem="qlB-Vp-DBa" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="Waz-JJ-Vse"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="leading" secondItem="ky6-fd-c4G" secondAttribute="trailing" constant="58.5" id="Xjp-if-80y"/>
+                            <constraint firstItem="3L9-0Q-Bbb" firstAttribute="centerY" secondItem="BwD-Yn-IUR" secondAttribute="centerY" id="gON-mC-osb"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="width" secondItem="BwD-Yn-IUR" secondAttribute="width" multiplier="0.7" id="hhS-7n-gCO"/>
+                            <constraint firstItem="lLU-pM-JTH" firstAttribute="centerY" secondItem="cNC-jf-fDr" secondAttribute="centerY" id="k7s-ux-CdT"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="centerX" secondItem="cNC-jf-fDr" secondAttribute="centerX" id="keK-FF-Byp"/>
+                            <constraint firstItem="sOT-gs-wQP" firstAttribute="centerX" secondItem="BwD-Yn-IUR" secondAttribute="centerX" id="ndn-Xa-SID"/>
+                            <constraint firstItem="sOT-gs-wQP" firstAttribute="leading" secondItem="oqb-e3-3D4" secondAttribute="trailing" constant="30" id="ovq-6t-EJx"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="width" secondItem="cNC-jf-fDr" secondAttribute="width" multiplier="0.65" id="qDx-CH-Ahu"/>
+                            <constraint firstItem="J65-Lh-hxp" firstAttribute="leading" secondItem="BwD-Yn-IUR" secondAttribute="leading" id="qw5-qf-bbA"/>
+                            <constraint firstItem="sOT-gs-wQP" firstAttribute="top" secondItem="cNC-jf-fDr" secondAttribute="bottom" constant="15" id="r0O-8m-DCD"/>
+                            <constraint firstItem="wgk-VW-c3j" firstAttribute="top" secondItem="J65-Lh-hxp" secondAttribute="bottom" id="tA2-sN-Cip"/>
+                            <constraint firstItem="cNC-jf-fDr" firstAttribute="width" secondItem="BwD-Yn-IUR" secondAttribute="width" multiplier="0.2" id="veS-V1-3Hv"/>
+                            <constraint firstItem="wgk-VW-c3j" firstAttribute="top" secondItem="cNC-jf-fDr" secondAttribute="bottom" constant="40" id="x24-45-ydc"/>
+                            <constraint firstItem="VlN-VB-9JY" firstAttribute="centerY" secondItem="cNC-jf-fDr" secondAttribute="centerY" id="xSV-Qf-q7y"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hhS-7n-gCO"/>
+                                <exclude reference="I96-Wd-3UJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="pNZ-L7-Qzm"/>
+                    <connections>
+                        <outlet property="coreView" destination="VlN-VB-9JY" id="cb1-kb-Rxp"/>
+                        <outlet property="coreViewWidthLiveConstraint" destination="hhS-7n-gCO" id="jDj-Is-ehc"/>
+                        <outlet property="coreViewWidthNormalConstraint" destination="qDx-CH-Ahu" id="eGj-HG-45M"/>
+                        <outlet property="coreWidthConstraint" destination="qDx-CH-Ahu" id="Gp8-i7-2bd"/>
+                        <outlet property="inverseGapConstraint" destination="77e-B6-58K" id="eAK-xc-YJg"/>
+                        <outlet property="inverseImageView" destination="lLU-pM-JTH" id="2Yj-qA-ryI"/>
+                        <outlet property="liveStatusCenterConstraint" destination="I96-Wd-3UJ" id="VlT-cl-uza"/>
+                        <outlet property="liveSubTitleLabel" destination="qlB-Vp-DBa" id="Mbr-go-Qar"/>
+                        <outlet property="liveTitleLabel" destination="3L9-0Q-Bbb" id="Adn-Sm-mc2"/>
+                        <outlet property="normalStatusCenterConstraint" destination="ndn-Xa-SID" id="4AA-1R-5vQ"/>
+                        <outlet property="selectionImageView" destination="feM-06-whE" id="7Gk-iF-vNr"/>
+                        <outlet property="statusLiveLabel" destination="oqb-e3-3D4" id="gnN-bL-zf8"/>
+                        <outlet property="statusNormalLabel" destination="sOT-gs-wQP" id="8h9-gH-fJW"/>
+                        <outlet property="statusView" destination="J65-Lh-hxp" id="Xhz-kp-syp"/>
+                        <outlet property="surroundingView" destination="cNC-jf-fDr" id="bPg-Kp-EXP"/>
+                        <outlet property="thunderGapConstraint" destination="Xjp-if-80y" id="TR2-q6-MVQ"/>
+                        <outlet property="thunderImageView" destination="ky6-fd-c4G" id="FOI-vt-Ppi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hn0-oL-KUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="-616.64167916041981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cameraSelection" width="25" height="10"/>
+        <image name="inverse" width="25" height="25"/>
+        <image name="thunder" width="25" height="25"/>
+    </resources>
+</document>

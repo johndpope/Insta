@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pen-Hv-hjX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instagram Tab View Controller-->
+        <scene sceneID="OWg-lE-i14">
+            <objects>
+                <viewController id="Pen-Hv-hjX" customClass="InstagramTabViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="07S-f9-q0J"/>
+                        <viewControllerLayoutGuide type="bottom" id="xCl-ir-M9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Amm-00-Y9s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UT3-Jb-FMF">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="" id="2Yx-pj-OIY"/>
+                                    <tabBarItem tag="1" id="9vh-mM-UUJ"/>
+                                    <tabBarItem tag="2" title="" id="U6V-m9-qxE"/>
+                                    <tabBarItem tag="3" id="bAE-NJ-dr4"/>
+                                    <tabBarItem tag="4" title="" id="Ffw-4h-a3T"/>
+                                </items>
+                            </tabBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMZ-6b-rlQ" userLabel="containerView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UT3-Jb-FMF" firstAttribute="leading" secondItem="Amm-00-Y9s" secondAttribute="leading" id="48Z-ft-v4P"/>
+                            <constraint firstItem="LMZ-6b-rlQ" firstAttribute="top" secondItem="07S-f9-q0J" secondAttribute="bottom" id="92H-q6-prI"/>
+                            <constraint firstAttribute="trailing" secondItem="LMZ-6b-rlQ" secondAttribute="trailing" id="INf-Qd-ThF"/>
+                            <constraint firstItem="UT3-Jb-FMF" firstAttribute="top" secondItem="LMZ-6b-rlQ" secondAttribute="bottom" id="Ohg-68-Wi2"/>
+                            <constraint firstItem="xCl-ir-M9S" firstAttribute="top" secondItem="UT3-Jb-FMF" secondAttribute="bottom" id="RQU-Rb-fZq"/>
+                            <constraint firstItem="LMZ-6b-rlQ" firstAttribute="leading" secondItem="Amm-00-Y9s" secondAttribute="leading" id="pzf-h0-Ztd"/>
+                            <constraint firstAttribute="trailing" secondItem="UT3-Jb-FMF" secondAttribute="trailing" id="tRu-7p-Oxk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="LMZ-6b-rlQ" id="WpF-PJ-VzA"/>
+                        <outlet property="tabBar" destination="UT3-Jb-FMF" id="bmw-EI-da8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJC-LB-Hh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="178"/>
+        </scene>
+    </scenes>
+</document>

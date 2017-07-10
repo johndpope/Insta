@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="Z1S-96-8wD" customClass="UserActivityFollowTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z1S-96-8wD" id="jdZ-2i-S2a">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C71-dP-LLq" userLabel="Inner View">
+                        <rect key="frame" x="10" y="10" width="355" height="55.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-sL-RfP">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Q4r-C5-iiq"/>
+                                    <constraint firstAttribute="width" constant="44" id="gkY-Eh-Kwb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1x-y7-c4Q" customClass="ActiveLabel" customModule="ActiveLabel">
+                                <rect key="frame" x="54" y="0.0" width="301" height="45.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="odB-v7-MsF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pw4-TG-bz3" userLabel="Bottom Line">
+                                <rect key="frame" x="54" y="54.5" width="301" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="q6R-v8-km7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s1x-y7-c4Q" secondAttribute="bottom" constant="10" id="809-3P-q4W"/>
+                            <constraint firstItem="pw4-TG-bz3" firstAttribute="leading" secondItem="s1x-y7-c4Q" secondAttribute="leading" id="DyE-yZ-phn"/>
+                            <constraint firstItem="2Zi-sL-RfP" firstAttribute="top" secondItem="C71-dP-LLq" secondAttribute="top" id="MLF-rt-DKG"/>
+                            <constraint firstItem="s1x-y7-c4Q" firstAttribute="leading" secondItem="2Zi-sL-RfP" secondAttribute="trailing" constant="10" id="NL5-DU-kUN"/>
+                            <constraint firstAttribute="bottom" secondItem="pw4-TG-bz3" secondAttribute="bottom" id="YPw-Ia-f6b"/>
+                            <constraint firstItem="2Zi-sL-RfP" firstAttribute="leading" secondItem="C71-dP-LLq" secondAttribute="leading" id="b4Q-RX-D1N"/>
+                            <constraint firstAttribute="trailing" secondItem="s1x-y7-c4Q" secondAttribute="trailing" id="lgh-km-1oL"/>
+                            <constraint firstItem="s1x-y7-c4Q" firstAttribute="top" secondItem="C71-dP-LLq" secondAttribute="top" id="unF-3b-Hjb"/>
+                            <constraint firstAttribute="trailing" secondItem="pw4-TG-bz3" secondAttribute="trailing" id="yJS-Ah-fRm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="C71-dP-LLq" secondAttribute="bottom" constant="10" id="0B0-jx-m44"/>
+                    <constraint firstItem="C71-dP-LLq" firstAttribute="top" secondItem="jdZ-2i-S2a" secondAttribute="top" constant="10" id="42R-Vh-br3"/>
+                    <constraint firstAttribute="trailing" secondItem="C71-dP-LLq" secondAttribute="trailing" constant="10" id="JXr-oS-uS8"/>
+                    <constraint firstItem="C71-dP-LLq" firstAttribute="leading" secondItem="jdZ-2i-S2a" secondAttribute="leading" constant="10" id="euu-I0-E4l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="s1x-y7-c4Q" id="yjw-yb-L2i"/>
+                <outlet property="userIcon" destination="2Zi-sL-RfP" id="I2m-af-hLe"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="32"/>
+        </tableViewCell>
+    </objects>
+</document>

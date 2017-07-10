@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zgX-yZ-SQA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posting Image View Controller-->
+        <scene sceneID="1Au-Co-cjh">
+            <objects>
+                <viewController storyboardIdentifier="PostingImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RPn-X4-4i2" customClass="PostingImageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vIa-le-HCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="WT1-WP-UHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wo7-3k-4I4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uVe-cE-kk9">
+                                <rect key="frame" x="10" y="74" width="355" height="75"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wKD-Jb-x9p">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wKD-Jb-x9p" secondAttribute="height" multiplier="1:1" id="q1V-o7-4Vc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="キャプションを書く" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lio-AK-g09">
+                                        <rect key="frame" x="90" y="7.5" width="265" height="67.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wKD-Jb-x9p" firstAttribute="top" secondItem="uVe-cE-kk9" secondAttribute="top" id="d8g-AF-ev6"/>
+                                    <constraint firstItem="Lio-AK-g09" firstAttribute="height" secondItem="wKD-Jb-x9p" secondAttribute="height" multiplier="0.9" id="op8-EN-0Ds"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4d-QH-pxc">
+                                <rect key="frame" x="0.0" y="159" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.86265093088150024" green="0.86279940605163574" blue="0.86264163255691528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MLg-bu-pub"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="899-eQ-N8N" customClass="CommomCellView" customModule="Instagram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="180" width="375" height="41.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98028594255447388" green="0.98045331239700317" blue="0.98027533292770386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="899-eQ-N8N" secondAttribute="trailing" id="5JZ-wz-xPV"/>
+                            <constraint firstItem="899-eQ-N8N" firstAttribute="height" secondItem="uVe-cE-kk9" secondAttribute="height" multiplier="0.55" id="Fuv-2v-dCc"/>
+                            <constraint firstItem="899-eQ-N8N" firstAttribute="top" secondItem="X4d-QH-pxc" secondAttribute="bottom" constant="20" id="Tkq-aI-t2D"/>
+                            <constraint firstAttribute="trailing" secondItem="X4d-QH-pxc" secondAttribute="trailing" id="Y0K-0U-uEW"/>
+                            <constraint firstItem="uVe-cE-kk9" firstAttribute="leading" secondItem="wo7-3k-4I4" secondAttribute="leading" constant="10" id="brL-KO-ezS"/>
+                            <constraint firstItem="899-eQ-N8N" firstAttribute="leading" secondItem="wo7-3k-4I4" secondAttribute="leading" id="c1C-ZG-Tnd"/>
+                            <constraint firstAttribute="trailing" secondItem="uVe-cE-kk9" secondAttribute="trailing" constant="10" id="hjV-Tl-DgN"/>
+                            <constraint firstItem="X4d-QH-pxc" firstAttribute="top" secondItem="uVe-cE-kk9" secondAttribute="bottom" constant="10" id="oHa-Iw-JsE"/>
+                            <constraint firstItem="uVe-cE-kk9" firstAttribute="top" secondItem="vIa-le-HCl" secondAttribute="bottom" constant="10" id="oem-T1-QFG"/>
+                            <constraint firstItem="X4d-QH-pxc" firstAttribute="leading" secondItem="wo7-3k-4I4" secondAttribute="leading" id="stx-pe-kdd"/>
+                            <constraint firstItem="wKD-Jb-x9p" firstAttribute="width" secondItem="wo7-3k-4I4" secondAttribute="width" multiplier="0.2" id="ujl-0x-Rds"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jad-T4-WmS">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="5eF-cB-lRc">
+                            <view key="customView" contentMode="scaleToFill" id="vzy-Be-XfR">
+                                <rect key="frame" x="16" y="5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="fZN-ZP-HcK">
+                                        <rect key="frame" x="0.0" y="6" width="21" height="21"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fZN-ZP-HcK" firstAttribute="centerY" secondItem="vzy-Be-XfR" secondAttribute="centerY" id="5ca-oU-xLR"/>
+                                    <constraint firstItem="fZN-ZP-HcK" firstAttribute="leading" secondItem="vzy-Be-XfR" secondAttribute="leading" id="Ir1-21-ZYj"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="Z2r-SK-Tmq">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規投稿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVA-8Z-WLm">
+                                    <rect key="frame" x="46.5" y="8.5" width="57.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="WVA-8Z-WLm" firstAttribute="centerX" secondItem="Z2r-SK-Tmq" secondAttribute="centerX" id="Ks4-Z7-bLJ"/>
+                                <constraint firstItem="WVA-8Z-WLm" firstAttribute="centerY" secondItem="Z2r-SK-Tmq" secondAttribute="centerY" id="aZm-Vw-NmJ"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="N9z-a4-MyS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qJA-G7-X5e">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="シェアする"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backImageView" destination="fZN-ZP-HcK" id="HaI-XZ-5Fw"/>
+                        <outlet property="captionTextField" destination="Lio-AK-g09" id="dIx-Hg-xdb"/>
+                        <outlet property="imageView" destination="wKD-Jb-x9p" id="nOE-DP-Edb"/>
+                        <outlet property="locationCellView" destination="899-eQ-N8N" id="4wt-Vj-zbq"/>
+                        <outlet property="shareButton" destination="qJA-G7-X5e" id="hKH-O5-kMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAi-Cy-Fdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="158.77061469265368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ec-Fn-kN7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zgX-yZ-SQA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DgH-dp-sCp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RPn-X4-4i2" kind="relationship" relationship="rootViewController" id="XRg-i5-LaO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN0-di-HT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="159.67016491754123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="21" height="21"/>
+    </resources>
+</document>
