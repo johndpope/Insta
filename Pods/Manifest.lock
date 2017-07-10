@@ -1,0 +1,67 @@
+PODS:
+  - ActiveLabel (0.7.1)
+  - APIKit (3.1.1):
+    - Result (~> 3.0)
+  - Himotoki (3.0.1)
+  - Kingfisher (3.9.0)
+  - lf (0.6.0):
+    - XCGLogger (~> 5.0.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Realm (2.6.2):
+    - Realm/Headers (= 2.6.2)
+  - Realm/Headers (2.6.2)
+  - RealmSwift (2.6.2):
+    - Realm (= 2.6.2)
+  - Result (3.2.1)
+  - RxCocoa (3.4.0):
+    - RxSwift (~> 3.4)
+  - RxRealm (0.6.0):
+    - RealmSwift (~> 2.5)
+    - RxSwift (~> 3.2)
+  - RxSmartBag (1.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.4.0)
+  - SVProgressHUD (2.1.2)
+  - XCGLogger (5.0.1):
+    - XCGLogger/Core (= 5.0.1)
+  - XCGLogger/Core (5.0.1):
+    - ObjcExceptionBridging
+  - XLPagerTabStrip (7.0.0)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - APIKit
+  - Himotoki
+  - Kingfisher
+  - lf
+  - RealmSwift
+  - RxCocoa
+  - RxRealm
+  - RxSmartBag
+  - RxSwift
+  - SVProgressHUD
+  - XLPagerTabStrip (~> 7.0)
+
+SPEC CHECKSUMS:
+  ActiveLabel: 68625f22775f51c31bb691ca8de20f1e5a3bc825
+  APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
+  Kingfisher: 752686a0fbb300df3240ba86431168ab9244bef2
+  lf: 871cb42186edff6c367b67daa68ddda19e961f7a
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Realm: 29222766425b9f831228f81b63f0e38a97a4d700
+  RealmSwift: d161a80f96cb91ae88391a7d5a9cf08024a7bc8e
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
+  RxRealm: 323de579b50b5e0f4a3e087d5925021f976ffaf1
+  RxSmartBag: 130847605458d3891372c32f4cc65a55e179b324
+  RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
+
+PODFILE CHECKSUM: 86b796cecde06ce0fb6cc8cf7195a02c0782280d
+
+COCOAPODS: 1.2.1

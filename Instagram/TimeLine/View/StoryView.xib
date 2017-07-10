@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryView" customModule="Instagram" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="k9H-yt-kHm" id="nnD-JK-UUq"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="5cj-bo-qG7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="contentView">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-yt-kHm">
+                    <rect key="frame" x="0.0" y="0.0" width="452" height="149"/>
+                    <color key="backgroundColor" red="0.98028594255447388" green="0.98045331239700317" blue="0.98027533292770386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3kS-8l-Sow">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xg7-1d-dcd">
+                    <rect key="frame" x="0.0" y="149" width="452" height="1"/>
+                    <color key="backgroundColor" red="0.87833553552627563" green="0.87848657369613647" blue="0.87832605838775635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LeJ-b8-9dJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k9H-yt-kHm" secondAttribute="trailing" id="7oP-8M-he4"/>
+                <constraint firstItem="k9H-yt-kHm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BE8-Ys-1Qm"/>
+                <constraint firstItem="k9H-yt-kHm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ElA-LR-yoN"/>
+                <constraint firstAttribute="trailing" secondItem="Xg7-1d-dcd" secondAttribute="trailing" id="GlB-dZ-iHx"/>
+                <constraint firstItem="Xg7-1d-dcd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MUM-UX-RRT"/>
+                <constraint firstItem="Xg7-1d-dcd" firstAttribute="top" secondItem="k9H-yt-kHm" secondAttribute="bottom" id="mKO-40-vWz"/>
+                <constraint firstAttribute="bottom" secondItem="Xg7-1d-dcd" secondAttribute="bottom" id="s2L-u1-Piw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35" y="-207"/>
+        </view>
+    </objects>
+</document>

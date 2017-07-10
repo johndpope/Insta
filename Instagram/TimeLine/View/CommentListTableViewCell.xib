@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="C2J-PH-OHA" customClass="CommentListTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C2J-PH-OHA" id="7Rc-UI-zQh">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="118.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="99h-E2-HTg">
+                        <rect key="frame" x="8" y="10" width="24.5" height="24.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24.5" id="ERO-2q-xme"/>
+                            <constraint firstAttribute="width" constant="24.5" id="H84-LV-ZC1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-a2-6Yl">
+                        <rect key="frame" x="37.5" y="10" width="53.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-Bk-X1f">
+                        <rect key="frame" x="37" y="26.5" width="28.5" height="88"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-4X-KUA">
+                        <rect key="frame" x="32" y="117.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.88617795705795288" green="0.88633018732070923" blue="0.88616830110549927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="i37-zZ-WPK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R6F-4X-KUA" firstAttribute="top" secondItem="PTf-Bk-X1f" secondAttribute="bottom" constant="3" id="KQU-J2-mdd"/>
+                    <constraint firstItem="VIM-a2-6Yl" firstAttribute="top" secondItem="7Rc-UI-zQh" secondAttribute="topMargin" constant="2" id="Lvk-Fa-2as"/>
+                    <constraint firstItem="VIM-a2-6Yl" firstAttribute="top" secondItem="99h-E2-HTg" secondAttribute="top" id="Od8-f1-EdQ"/>
+                    <constraint firstItem="PTf-Bk-X1f" firstAttribute="top" secondItem="VIM-a2-6Yl" secondAttribute="bottom" constant="3" id="RbB-3K-X12"/>
+                    <constraint firstItem="99h-E2-HTg" firstAttribute="height" secondItem="VIM-a2-6Yl" secondAttribute="height" multiplier="1.8" id="Rcu-1E-luU"/>
+                    <constraint firstAttribute="bottom" secondItem="R6F-4X-KUA" secondAttribute="bottom" id="UQn-8V-1Ez"/>
+                    <constraint firstItem="VIM-a2-6Yl" firstAttribute="leading" secondItem="99h-E2-HTg" secondAttribute="trailing" constant="5" id="f5u-x9-Ilb"/>
+                    <constraint firstItem="99h-E2-HTg" firstAttribute="leading" secondItem="7Rc-UI-zQh" secondAttribute="leading" constant="8" id="ft1-eG-MQF"/>
+                    <constraint firstItem="R6F-4X-KUA" firstAttribute="leading" secondItem="99h-E2-HTg" secondAttribute="trailing" id="fzX-KC-cuc"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="PTf-Bk-X1f" secondAttribute="trailing" constant="5" id="lDM-OT-hdy"/>
+                    <constraint firstAttribute="trailing" secondItem="R6F-4X-KUA" secondAttribute="trailing" id="rEW-S4-W3L"/>
+                    <constraint firstItem="PTf-Bk-X1f" firstAttribute="leading" secondItem="99h-E2-HTg" secondAttribute="trailing" constant="5" id="xtm-ay-pEX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="PTf-Bk-X1f" id="5ez-7D-rgx"/>
+                <outlet property="iconImageView" destination="99h-E2-HTg" id="8xD-gK-7t0"/>
+                <outlet property="userNameLabel" destination="VIM-a2-6Yl" id="1RP-C7-zRY"/>
+            </connections>
+            <point key="canvasLocation" x="98" y="112.5"/>
+        </tableViewCell>
+    </objects>
+</document>

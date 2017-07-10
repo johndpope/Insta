@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zU0-B5-nJY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posting Story Image View Controller-->
+        <scene sceneID="5yo-kZ-ZOB">
+            <objects>
+                <viewController storyboardIdentifier="PostingImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zU0-B5-nJY" customClass="PostingStoryImageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O7i-VM-X64"/>
+                        <viewControllerLayoutGuide type="bottom" id="awZ-eD-JVy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R87-NE-Nkp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-xd-GUQ">
+                                <rect key="frame" x="293" y="591" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hFP-xd-GUQ" secondAttribute="height" multiplier="1:1" id="5Se-xn-5rU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closeWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Wpt-96-Rq4">
+                                <rect key="frame" x="26" y="30" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wpt-96-Rq4" secondAttribute="height" multiplier="1:1" id="gfU-zb-2Mq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaY-Y2-nvu">
+                                <rect key="frame" x="-8" y="-8" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98028594260000002" green="0.9804533124" blue="0.98027533290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wpt-96-Rq4" firstAttribute="width" secondItem="eaY-Y2-nvu" secondAttribute="width" multiplier="0.05" id="6JC-rz-8qo"/>
+                            <constraint firstItem="awZ-eD-JVy" firstAttribute="top" secondItem="hFP-xd-GUQ" secondAttribute="bottom" constant="20" id="K9e-ts-kUw"/>
+                            <constraint firstItem="hFP-xd-GUQ" firstAttribute="width" secondItem="eaY-Y2-nvu" secondAttribute="width" multiplier="0.15" id="LBL-Qw-0Mw"/>
+                            <constraint firstAttribute="trailing" secondItem="eaY-Y2-nvu" secondAttribute="trailing" id="VNe-T7-oTg"/>
+                            <constraint firstItem="eaY-Y2-nvu" firstAttribute="top" secondItem="R87-NE-Nkp" secondAttribute="top" id="XM0-IE-KLP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hFP-xd-GUQ" secondAttribute="trailing" constant="10" id="YAU-Q2-Aon"/>
+                            <constraint firstItem="awZ-eD-JVy" firstAttribute="top" secondItem="eaY-Y2-nvu" secondAttribute="bottom" id="dse-IK-sRV"/>
+                            <constraint firstItem="eaY-Y2-nvu" firstAttribute="leading" secondItem="R87-NE-Nkp" secondAttribute="leading" id="f0k-Be-aOY"/>
+                            <constraint firstItem="Wpt-96-Rq4" firstAttribute="top" secondItem="O7i-VM-X64" secondAttribute="bottom" constant="10" id="hz3-hN-TkZ"/>
+                            <constraint firstItem="Wpt-96-Rq4" firstAttribute="leading" secondItem="R87-NE-Nkp" secondAttribute="leadingMargin" constant="10" id="r98-QI-dxI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeImageView" destination="Wpt-96-Rq4" id="YfR-zi-F9G"/>
+                        <outlet property="postImageView" destination="hFP-xd-GUQ" id="GmG-m3-L4E"/>
+                        <outlet property="postingStoryImageView" destination="eaY-Y2-nvu" id="P5k-AG-2aV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EY-zj-V2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circleArrow" width="25" height="25"/>
+        <image name="closeWhite" width="16" height="16"/>
+    </resources>
+</document>
