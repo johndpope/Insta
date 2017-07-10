@@ -11,20 +11,10 @@ import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        /*
-        let realmDataSet = RealmDataSet()
-        realmDataSet.userId = 1
         
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(realmDataSet)
-        }*/
         let realmDataSet = RealmDataSet()
         realmDataSet.userId = 5
         
